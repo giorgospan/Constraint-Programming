@@ -15,7 +15,8 @@ Prolog's libraries, [ic](http://eclipseclp.org/doc/bips/lib/ic/index.html) and [
 
     * **maxclq(N, D, Clique, Size)** : calls create_graph(N, D, G) and searches for the maximum clique of the graph, matching the clique edge-list to "Clique" and its size to "Size".
 
-    * **Key idea** : for every pair of non-adjacent vertices , they cannot be both of them part of the max clique, either one of them or none of them should be part of the max clique.
+    * **Key idea**
+    For every pair of non-adjacent vertices , they cannot be both of them part of the max clique, either one of them or none of them should be part of the max clique.
 
 
 
@@ -56,9 +57,15 @@ Prolog's libraries, [ic](http://eclipseclp.org/doc/bips/lib/ic/index.html) and [
 
     Our **goal** is to find the optimal solution to the routing problem, i.e: a solution with the minimum overall travelled distance by the company's vehicles. 
 
-    Note that customers' places are on a straight line, thus we make use Euclidean Distance. 
+    Note that customers' places are on a straight line, thus we make use of Euclidean Distance. 
 
-    * **hcvrp/6** : Matches on the 6th variable a list containing a list of customer-IDs for every vehicle. Those are the customers that the vehicle will visit during the shipping process.
+    * **hcvrp/6** : Matches on the "Solution" variable a list containing a list of customer-IDs for every vehicle. Those are the IDs of the customers that the vehicle will visit in that order during shipping process. Additionally, it matches "Cost" variable with the cost of the solution found.
+
+    * **Note**
+
+    Ideally, the optimal solution should be found. However, this is not always possible, at least in reasonable time. Thus, we pass "Timeout" to hcvrp/6 in order to abort searching for a better solution after the specified time interval.
+     
+
 
 
 
