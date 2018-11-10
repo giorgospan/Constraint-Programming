@@ -59,12 +59,16 @@ Prolog's libraries, [ic](http://eclipseclp.org/doc/bips/lib/ic/index.html) and [
 
     Note that customers' places are on a straight line, thus we make use of Euclidean Distance. 
 
+    * **clients/1**  : A predicate that depicts customers' info.
+    
+    * **c(D, X, Y)** : A construct containing the quantity of product ordered by the customer \(D\) and the coordinates of the customer \(X , Y\).
+
     * **hcvrp/6** : Matches on the "Solution" variable a list containing a list of customer-IDs for every vehicle. Those are the IDs of the customers that the vehicle will visit in that order during shipping process. Additionally, it matches "Cost" variable with the cost of the solution found.
 
     * **Note**
 
-    Ideally, the optimal solution should be found. However, this is not always possible, at least in reasonable time. Thus, we pass "Timeout" to hcvrp/6 in order to abort searching for a better solution after the specified time interval.
-     
+    Ideally, the optimal solution should be found. However, this is not always possible, at least in reasonable time. Thus, we pass "Timeout" to hcvrp/6 in order to abort searching for a better solution after a specified time interval.
+
 
 
 
