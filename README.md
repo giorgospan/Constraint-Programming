@@ -1,2 +1,3 @@
-# Constraint-Programming
-Constraint Programming [Logic Programming Course]
+# Constraint Programming
+
+These assignments are part of my *Logic Programming* course during Spring '17 semester.
