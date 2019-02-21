@@ -2,7 +2,7 @@
 
 ### About
 
-These assignments are part of my *Logic Programming* course during Spring '17 semester.
+These assignments are part of *Logic Programming* course during Spring '17 semester.
 
 Prolog's libraries, [ic](http://eclipseclp.org/doc/bips/lib/ic/index.html) and [branch and bound](http://eclipseclp.org/doc/bips/lib/branch_and_bound/index.html), are used in order to deal with the following constraint satisfaction problems .
 
